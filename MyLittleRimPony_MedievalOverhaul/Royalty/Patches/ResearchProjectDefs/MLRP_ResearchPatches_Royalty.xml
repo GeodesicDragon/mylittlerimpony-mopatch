@@ -1,0 +1,27 @@
+<Patch>
+
+	<!--Replace high tech research bench with MO equivalent and remove multi analyser/techprint requirements-->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[@Name="MLRP_VeryHardResearchBase"]</xpath>
+		<value>
+			<ResearchProjectDef Name="MLRP_VeryHardResearchBase" Abstract="True">
+				<baseCost>6000</baseCost>
+				<techLevel>Spacer</techLevel>
+				<requiredResearchBuilding>DankPyon_AdvancedResearchBench</requiredResearchBuilding>
+			</ResearchProjectDef>  
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[@Name="MLRP_VeryTimeConsumingResearchBase"]</xpath>
+		<value>
+			<ResearchProjectDef Name="MLRP_VeryTimeConsumingResearchBase" Abstract="True">
+				<baseCost>50000</baseCost>
+				<techLevel>Ultra</techLevel>
+				<requiredResearchBuilding>DankPyon_AdvancedResearchBench</requiredResearchBuilding>
+			</ResearchProjectDef> 
+		</value>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>[MLP] My Little RimPony - Medieval Overhaul Patches</name>
+	<author>GeodesicDragon</author>
+	<packageId>geodesicdragon.rimpony.medieval</packageId>
+	<url>https://discord.gg/BGKnpza</url>
+	<modVersion>1.27.3</modVersion>
+	<supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>geodesicdragon.rimpony</packageId>
+			<displayName>[MLP] My Little RimPony</displayName>
+			<downloadUrl>https://github.com/GeodesicDragon/mylittlerimpony/releases/latest</downloadUrl>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2349465544</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>DankPyon.Medieval.Overhaul</packageId>
+			<displayName>Medieval Overhaul</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2553700067</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>geodesicdragon.rimpony</li>
+		<li>DankPyon.Medieval.Overhaul</li>
+		<li>imranfish.xmlextensions</li>
+	</loadAfter>
+	<description><![CDATA[<b>ABOUT</b>
+	
+This mod contains a series of patches which will make My Little RimPony (MLRP) compatible with Medieval Overhaul.
+
+<b>WHAT'S BEEN CHANGED?</b>
+	
+* Daybreaker recipes now use coal instead of chemfuel.
+* Pawns in the Brony Community and Brony Xenotype scenarios start with plate armour instead of flak armour.
+* Sweetie Bot turrets require a million watts of power.
+* Poison joke joints can now be made at the workbench.
+* Plushie benches no longer require power.
+* Plushie benches are now built using iron bars and basic components.
+* Plushie benches are unlocked after researching tailoring instead of electricity.
+* Plushie benches can benefit from being near a tool rack.
+* Brony traders and villagers are now equipped with peasant gear.
+* Brony mercenaries have been converted into archers.
+* Melee mercenaries are equipped with plate armour and zweihanders.
+* Elite mercenaries and leader pawns are equipped with heavy armour and gunpowder weapons.
+* Quick research projects have been changed to the Medieval tech level.
+* Medium, hard and time-consuming research projects now require the advanced research bench instead of the high tech one.
+* Hard and time-consuming research projects no longer require a multi analyser.
+* Royalty DLC: Very hard research projects no longer require a multi analyser or techprints, but have been upgraded to the Spacer tech level.
+* Royalty DLC: Very time consuming research projects no longer require a multi analyser or techprints.
+* Mudbriar, Quibble Pants and Zephyr Breeze turrets now require a lot of power.
+* Factions added by MLRP have had their tech levels changed to Medieval.
+* The Stone Exchange no longer requires power.
+* The Super Speedy Cider Squeezy 6000 no longer requires power.
+* Nurse Redheart no longer requires power, but she will now spawn herbal medicine instead of industrial.
+* The Fabric Exchange no longer requires power, and is unlocked once tailoring is researched.
+* Vanilla Factions Expanded - Deserters: Requesting regular/critical intel now requires 50/100 herbal medicine.
+
+<b>WHAT'S NEW?</b>
+
+* Daybreaker has recipes to convert iron ingots into silver and back again.
+* Daybreaker has recipes to convert Medieval Overhaul's basic components into base RimWorld components and back again.
+* The Fabric Exchange has recipes to purchase linen, silk, daer leather, lindwurm scales, rox wool and tanning liquor.
+* NPC factions - regular and batpony - will now send scholar caravans.
+
+<b>WHAT'S REMAINED THE SAME?</b>
+
+* NPC faction pawns are still equipped with the relevant plushies.
+
+<b>WHY IS THIS A SEPARATE MOD?</b>
+
+Because I'd rather give people the choice of having these changes, rather than force them by putting these patches in with the main mod.]]></description>
+</ModMetaData>

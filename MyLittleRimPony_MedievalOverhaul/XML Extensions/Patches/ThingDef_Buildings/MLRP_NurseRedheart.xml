@@ -1,0 +1,19 @@
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="MLRP_NurseRedheart"]/comps</xpath>
+		<value>
+			<comps>
+				<li Class="CompProperties_Spawner">
+					<requiresPower>false</requiresPower>
+					<thingToSpawn>MedicineHerbal</thingToSpawn>
+					<spawnCount>5</spawnCount>
+					<spawnIntervalRange><min>600000</min><max>600000</max></spawnIntervalRange>
+					<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+					<showMessageIfOwned>true</showMessageIfOwned>
+				</li>
+			</comps>
+		</value>
+	</Operation>
+	
+</Patch>

@@ -1,0 +1,129 @@
+<Defs>
+
+<!--PURCHASE LINEN-->
+
+<RecipeDef ParentName="MLRP_FE_RecipeBase">
+	<defName>MLRP_FE_DankPyon_Linen</defName>
+	<label>purchase linen</label>
+	<description>Use silver to purchase 100 linen.</description>
+    <ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Silver</li>
+				</thingDefs>
+			</filter>
+			<count>17</count>
+		</li>
+	</ingredients>
+	<products>
+		<DankPyon_Linen>100</DankPyon_Linen>
+	</products>	
+</RecipeDef>
+
+<!--PURCHASE SILK-->
+
+<RecipeDef ParentName="MLRP_FE_RecipeBase">
+	<defName>MLRP_FE_DankPyon_Silk</defName>
+	<label>purchase silk</label>
+	<description>Use silver to purchase 100 silk.</description>
+    <ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Silver</li>
+				</thingDefs>
+			</filter>
+			<count>53</count>
+		</li>
+	</ingredients>
+	<products>
+		<DankPyon_Silk>100</DankPyon_Silk>
+	</products>	
+</RecipeDef>
+
+<!--PURCHASE DAER LEATHER-->
+
+<RecipeDef ParentName="MLRP_FE_RecipeBase">
+	<defName>MLRP_FE_DankPyon_Leather_Daer</defName>
+	<label>purchase daer leather</label>
+	<description>Use silver to purchase 100 daer leather.</description>
+    <ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Silver</li>
+				</thingDefs>
+			</filter>
+			<count>179</count>
+		</li>
+	</ingredients>
+	<products>
+		<DankPyon_Leather_Daer>100</DankPyon_Leather_Daer>
+	</products>	
+</RecipeDef>
+
+<!--PURCHASE LINDWURM SCALES-->
+
+<RecipeDef ParentName="MLRP_FE_RecipeBase">
+	<defName>MLRP_FE_DankPyon_Leather_Lindwurm</defName>
+	<label>purchase lindwurm scales</label>
+	<description>Use silver to purchase 100 lindwurm scales.</description>
+    <ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Silver</li>
+				</thingDefs>
+			</filter>
+			<count>210</count>
+		</li>
+	</ingredients>
+	<products>
+		<DankPyon_Leather_Lindwurm>100</DankPyon_Leather_Lindwurm>
+	</products>	
+</RecipeDef>
+
+<!--PURCHASE ROX WOOL-->
+
+<RecipeDef ParentName="MLRP_FE_RecipeBase">
+	<defName>MLRP_FE_DankPyon_DankPyon_WoolRox</defName>
+	<label>purchase rox wool</label>
+	<description>Use silver to purchase 100 rox wool.</description>
+    <ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Silver</li>
+				</thingDefs>
+			</filter>
+			<count>29</count>
+		</li>
+	</ingredients>
+	<products>
+		<DankPyon_WoolRox>100</DankPyon_WoolRox>
+	</products>	
+</RecipeDef>
+
+<!--PURCHASE TANNING LIQUOR-->
+
+<RecipeDef ParentName="MLRP_FE_RecipeBase">
+	<defName>MLRP_FE_DankPyon_DankPyon_TanningLiquor</defName>
+	<label>purchase tanning liquor</label>
+	<description>Use silver to purchase 100 tanning liquor.</description>
+    <ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Silver</li>
+				</thingDefs>
+			</filter>
+			<count>23</count>
+		</li>
+	</ingredients>
+	<products>
+		<DankPyon_TanningLiquor>100</DankPyon_TanningLiquor>
+	</products>	
+</RecipeDef>
+
+</Defs>

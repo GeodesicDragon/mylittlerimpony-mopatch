@@ -1,0 +1,294 @@
+<Patch>
+
+<Operation Class="PatchOperationSequence">
+	<operations>
+		<!--AGGRO TURRETS NEED POWER-->
+		<li Class="XmlExtensions.OptionalPatch">
+			<modId>geodesicdragon.rimpony.medieval</modId>
+			<key>MLRP_MO_AggroTurretsRequirePower</key>
+			<defaultValue>true</defaultValue>
+			<caseTrue>
+				<Operation Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="MLRP_Mudbriar" or defName="MLRP_QuibblePants" or defName="MLRP_ZephyrBreeze"]</xpath>
+					<value>
+						<comps>
+						  <li Class="CompProperties_Forbiddable"/>
+						  <li Class="CompProperties_Power">
+							<compClass>CompPowerTrader</compClass>
+							<basePowerConsumption>1000000</basePowerConsumption>
+						  </li>
+						  <li Class="CompProperties_Flickable"/>
+						</comps>		
+					</value>
+				</Operation>
+				
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MLRP_Mudbriar"]/description</xpath>
+					<value>
+						<description>Mudbriar's 'stick in the mud' attitude would be very useful for distracting raiders, were it not for the fact there is no possible way for you to generate the massive amount of power he needs.</description>
+					</value>
+				</Operation>
+				
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MLRP_QuibblePants"]/description</xpath>
+					<value>
+						<description>Quibble's constant blabbering would be very useful for distracting raiders, were it not for the fact there is no possible way for you to generate the massive the massive amount of power he needs.</description>
+					</value>
+				</Operation>
+				
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MLRP_ZephyrBreeze"]/description</xpath>
+					<value>
+						<description>Zephyr's pig-headed arrogance would be very useful for distracting raiders, were it not for the fact there is no possible way for you to generate the massive amount of power he needs.</description>
+					</value>
+				</Operation>
+			</caseTrue>
+			<caseFalse>
+				<Operation Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="MLRP_Mudbriar" or defName="MLRP_QuibblePants" or defName="MLRP_ZephyrBreeze"]/comps</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef[defName="MLRP_Mudbriar" or defName="MLRP_QuibblePants" or defName="MLRP_ZephyrBreeze"]/comps</xpath>
+					</match>
+				</Operation>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MLRP_Mudbriar"]/description</xpath>
+					<value>
+						<description>Mudbriar is a stick pony through and through, but out here on the rim he's nothing more than target practice for any raiders coming your way.</description>
+					</value>
+				</Operation>
+				
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MLRP_QuibblePants"]/description</xpath>
+					<value>
+						<description>Quibble Pants thinks he is the ultimate fan, and will go out of his way to prove he knows more than anypony else. Good thing his constant blabbering can be put to use.</description>
+					</value>
+				</Operation>
+				
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MLRP_ZephyrBreeze"]/description</xpath>
+					<value>
+						<description>Although Zephyr Breeze reckons he is Celestia's gift to mares, he is yet to find one who agrees with him. Thankfully, though, his pig-headed arrogance can actually be useful.\n\nFuthermore, his thick skull - which has absorbed countless rejections from Rainbow Dash alone - makes him surprisingly durable.\n\nGood thing, too, because a lot of people seem to want to hit him.</description>
+					</value>
+				</Operation>
+			</caseFalse>
+		</li>
+		
+		<!--DAYBREAKER USES COAL INSTEAD OF CHEMFUEL-->
+		<li Class="XmlExtensions.OptionalPatch">
+			<modId>geodesicdragon.rimpony.medieval</modId>
+			<key>MLRP_MO_DaybreakerUsesCoal</key>
+			<defaultValue>true</defaultValue>
+			<caseTrue>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[@Name="DaybreakerRecipes_HalfChemfuel"]/ingredients</xpath>
+					<value>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>DankPyon_Coal</li>
+									</thingDefs>
+								</filter>
+								<count>5</count>
+							</li>
+						</ingredients>
+					</value>
+				</Operation>
+				
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[@Name="DaybreakerRecipes_RegularChemfuel"]/ingredients</xpath>
+					<value>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>DankPyon_Coal</li>
+									</thingDefs>
+								</filter>
+								<count>10</count>
+							</li>
+						</ingredients>
+					</value>
+				</Operation>
+				
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[@Name="DaybreakerRecipes_DoubleChemfuel"]/ingredients</xpath>
+					<value>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>DankPyon_Coal</li>
+									</thingDefs>
+								</filter>
+								<count>20</count>
+							</li>
+						</ingredients>
+					</value>
+				</Operation>
+				
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[@Name="DaybreakerRecipes_TripleChemfuel"]/ingredients</xpath>
+					<value>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>DankPyon_Coal</li>
+									</thingDefs>
+								</filter>
+								<count>30</count>
+							</li>
+						</ingredients>
+					</value>
+				</Operation>
+			</caseTrue>
+			<caseFalse>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[@Name="DaybreakerRecipes_HalfChemfuel"]/ingredients</xpath>
+					<value>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Chemfuel</li>
+									</thingDefs>
+								</filter>
+								<count>25</count>
+							</li>
+						</ingredients>
+					</value>
+				</Operation>
+				
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[@Name="DaybreakerRecipes_RegularChemfuel"]/ingredients</xpath>
+					<value>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Chemfuel</li>
+									</thingDefs>
+								</filter>
+								<count>50</count>
+							</li>
+						</ingredients>
+					</value>
+				</Operation>
+				
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[@Name="DaybreakerRecipes_DoubleChemfuel"]/ingredients</xpath>
+					<value>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Chemfuel</li>
+									</thingDefs>
+								</filter>
+								<count>100</count>
+							</li>
+						</ingredients>
+					</value>
+				</Operation>
+				
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[@Name="DaybreakerRecipes_TripleChemfuel"]/ingredients</xpath>
+					<value>
+						<ingredients>
+							<li>
+								<filter>
+									<thingDefs>
+										<li>Chemfuel</li>
+									</thingDefs>
+								</filter>
+								<count>150</count>
+							</li>
+						</ingredients>
+					</value>
+				</Operation>
+			</caseFalse>
+		</li>
+		
+		<!---->
+		<li Class="XmlExtensions.OptionalPatch">
+			<modId>geodesicdragon.rimpony.medieval</modId>
+			<key>MLRP_MO_SweetieBotTurretsUseLotsOfPower</key>
+			<defaultValue>true</defaultValue>
+			<caseTrue>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MLRP_Turret_SweetieBot"]/comps/li[@Class="CompProperties_Power"]/basePowerConsumption</xpath>
+					<value>
+						<basePowerConsumption>1000000</basePowerConsumption>
+					</value>
+				</Operation>
+				
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MLRP_Turret_SweetieBot"]/description</xpath>
+					<value>
+						<description>Fires rainbow lasers that are accurate at medium to long range. Will not explode if damaged.\n\nWhile it sounds good, there is absolutely no way you'd be able to generate the huge amount of power it requires.</description>
+					</value>
+				</Operation>
+			</caseTrue>
+			<caseFalse>
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MLRP_Turret_SweetieBot"]/comps/li[@Class="CompProperties_Power"]/basePowerConsumption</xpath>
+					<value>
+						<basePowerConsumption>400</basePowerConsumption>
+					</value>
+				</Operation>
+				
+				<Operation Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MLRP_Turret_SweetieBot"]/description</xpath>
+					<value>
+						<description>Fires rainbow lasers that are accurate at medium to long range. Will not explode if damaged.</description>
+					</value>
+				</Operation>
+			</caseFalse>
+		</li>
+
+		<!--SETTINGS WINDOW-->
+		<li Class="XmlExtensions.CreateSettings">
+			<modId>geodesicdragon.rimpony.medieval</modId>
+			<label>MLRP - Medieval Overhaul Patches</label>
+			<settings>
+				<li Class="XmlExtensions.Setting.Text">
+					<text>IMPORTANT: You will need to restart RimWorld after changing any of these settings.</text>
+					<font>Medium</font>
+					<anchor>Middle</anchor>
+				</li>
+		
+				<li Class="XmlExtensions.Setting.Gap"/>
+				
+				<li Class="XmlExtensions.Setting.Checkbox">
+					<key>MLRP_MO_AggroTurretsRequirePower</key>
+					<label>Aggro turrets require power</label>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Gap"/>
+				
+				<li Class="XmlExtensions.Setting.Checkbox">
+					<key>MLRP_MO_DaybreakerUsesCoal</key>
+					<label>Daybreaker recipes use coal instead of chemfuel</label>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Gap"/>
+				
+				<li Class="XmlExtensions.Setting.Checkbox">
+					<key>MLRP_MO_SweetieBotTurretsUseLotsOfPower</key>
+					<label>Sweetie Bot turrets require a huge amount of power</label>
+				</li>
+				
+				<li Class="XmlExtensions.Setting.Gap">
+					<spacing>8</spacing>
+				</li>
+										
+				<li Class="XmlExtensions.Setting.GapLine"/>
+				
+				<li Class="XmlExtensions.Setting.ResetSettings"/>
+			</settings>
+		</li>
+	</operations>
+</Operation>
+
+</Patch>

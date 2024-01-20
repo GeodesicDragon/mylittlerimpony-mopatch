@@ -1,0 +1,27 @@
+<Patch>
+
+	<!--Reduce tech level of basic research projects-->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[@Name="MLRP_QuickResearchBase"]/techLevel</xpath>
+		<value>
+			<techLevel>Medieval</techLevel>   
+		</value>
+	</Operation>
+	
+	<!--Replace high tech research bench with MO equivalent-->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[@Name="MLRP_MediumResearchBase" or @Name="MLRP_HardResearchBase" or @Name="MLRP_TimeConsumingResearchBase"]/requiredResearchBuilding</xpath>
+		<value>
+			<requiredResearchBuilding>DankPyon_AdvancedResearchBench</requiredResearchBuilding>   
+		</value>
+	</Operation>
+	
+	<!--Remove multi analyser requirement since I can't think of anything to replace it with-->
+	
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ResearchProjectDef[@Name="MLRP_HardResearchBase" or @Name="MLRP_TimeConsumingResearchBase"]/requiredResearchFacilities</xpath>
+	</Operation>
+
+</Patch>

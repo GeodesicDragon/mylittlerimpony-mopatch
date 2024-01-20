@@ -1,0 +1,23 @@
+<Patch>
+	
+	<!--I'm not sure if I actually need to patch the player faction, but I'll do it anyway-->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/FactionDef[defName="MLRP_RenegadeAlicornFaction"]/techLevel</xpath>
+		<value>
+			<techLevel>Medieval</techLevel>
+		</value>
+	</Operation>
+	
+	<!--NPC faction pawns have been patched, so the faction needs to be adjusted accordingly-->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/FactionDef[defName="MLRP_Batpony_Faction"]/techLevel</xpath>
+		<value>
+			<techLevel>Medieval</techLevel>
+		</value>
+	</Operation>
+	
+	<!--Diamond dog factions are already medieval-->
+
+</Patch>

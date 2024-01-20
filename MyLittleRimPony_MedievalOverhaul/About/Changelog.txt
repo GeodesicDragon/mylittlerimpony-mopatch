@@ -1,0 +1,43 @@
+Version 1.27.3 (January 20th 2024)
+
+* If you have XML Extensions enabled, you can now decide whether or not the following changes are applied.
+	* Aggro turrets require power.
+	* Daybreaker requires coal instead of chemfuel.
+	* Sweetie Bot requires 1000000W of power instead of 400W.
+* Added patch which sets the player faction tech level to Medieval.
+* Added patch which sets the NPC faction tech level to Medieval.
+* Added patch which sets the batpony faction tech level to Medieval.
+* Added patch which sets the renegade alicorn faction tech level to Medieval.
+* Added patch which removes the need to power the Stone Exchange.
+* Added patch which removes the need to power the Super Speedy Cider Squeezy 6000.
+* Added patch which removes the need to power Nurse Redheart, and changes her to spawn herbal medicine instead of industrial.
+* Added patch which removes the need to power the Fabric Exchange.
+* Added patch which unlocks the Fabric Exchange after researching Tailoring.
+* Added six new purchase recipes to the Fabric Exchange.
+	* Linen (170 silver)
+	* Silk (530 silver)
+	* Daer leather (1790 silver)
+	* Lindwurm scales (2100 silver)
+	* Rox wool (290 silver)
+	* Tanning liquor (230 silver)
+* Added a patch for VFE Deserters which changes the regular intel recipe to require 50 herbal medicine instead of 25 industrial.
+* Added a patch for VFE Deserters which changes the critical intel recipe to require 100 herbal medicine instead of 25 glitterworld.
+* NPC factions - regular and batpony - will now send scholar caravans.
+
+Version 1.7.2 (December 16th 2023)
+
+* Added Daybreaker recipes to convert iron ingots into silver and vice versa.
+	* 1000 silver can be turned into 667 ingots and back again.
+	* No research required.
+	* Uses 10 coal.
+* Added Daybreaker recipes to convert vanilla components into Medieval Overhaul's basic components and vice versa.
+	* Conversions are done at a 1:1 ratio.
+	* Conversions do not use any fuel.
+* Added patch which makes Mudbriar turrets require power.
+* Added patch which makes Quibble Pants turrets require power.
+* Added patch which makes Zephyr Breeze turrets require power.
+* The plushie bench can now link to the tool rack.
+
+Version 1.0.1 (December 8th 2023)
+
+* Initial release.

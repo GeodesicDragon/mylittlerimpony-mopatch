@@ -1,0 +1,234 @@
+<Patch>
+	
+	<!--Change apparel equipped by player controlled pawns at the beginning of scenarios-->
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="MLRP_BronyPlayer"]/apparelRequired</xpath>
+		<value>
+			<apparelRequired>
+				<li>Apparel_PlateArmor</li>
+			</apparelRequired>
+		</value>
+	</Operation>
+	
+	<!--NPC faction leader and elite mercs-->
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Brony_Mercenary_Elite"]/label</xpath>
+		<value>
+			<label>brony heavy mercenary</label>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Brony_Mercenary_Elite"]/labelPlural</xpath>
+		<value>
+			<labelPlural>brony heavy mercenaries</labelPlural>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Brony_Leader" or defName="Brony_Mercenary_Elite"]/apparelTags</xpath>
+		<value>
+			<apparelTags>
+                <li>DankPyon_Knight</li>
+                <li>DankPyon_HedgeKnight</li>
+                <li>MedievalMilitaryAdvanced</li>
+			</apparelTags>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Brony_Leader" or defName="Brony_Mercenary_Elite"]/apparelMoney</xpath>
+		<value>
+			<apparelMoney>700~1200</apparelMoney>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Brony_Leader" or defName="Brony_Mercenary_Elite"]/apparelRequired</xpath>
+		<value>
+			<apparelRequired>
+				<li>PonyPlush_RainbowDash</li>
+			</apparelRequired>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Brony_Leader" or defName="Brony_Mercenary_Elite"]/weaponTags</xpath>
+		<value>
+			<weaponTags>
+				<li>DankPyon_Handgonne</li>
+			</weaponTags>
+		</value>
+	</Operation>
+	
+	<!--NPC faction ranged mercs-->
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Brony_Mercenary"]/label</xpath>
+		<value>
+			<label>brony mercenary archer</label>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Brony_Mercenary"]/labelPlural</xpath>
+		<value>
+			<labelPlural>brony mercenary archers</labelPlural>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Brony_Mercenary"]/apparelTags</xpath>
+		<value>
+			<apparelTags>
+				<li>DankPyon_ArbalesterHelmet</li>
+				<li>DankPyon_Archer</li>
+			</apparelTags>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Brony_Mercenary"]/apparelMoney</xpath>
+		<value>
+			<apparelMoney>
+				<min>1000</min>
+				<max>1000</max>
+			</apparelMoney>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Brony_Mercenary"]/weaponMoney</xpath>
+		<value>
+			<weaponMoney>
+				<min>200</min>
+				<max>400</max>
+			</weaponMoney>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Brony_Mercenary"]/apparelRequired</xpath>
+		<value>
+			<apparelRequired>
+				<li>PonyPlush_RainbowDash</li>
+			</apparelRequired>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Brony_Mercenary"]/weaponTags</xpath>
+		<value>
+			<weaponTags>
+				<li>DankPyon_HuntingBow</li>
+				<li>DankPyon_GreatBow</li>
+				<li>DankPyon_Warbow</li>
+			</weaponTags>
+		</value>
+	</Operation>
+	
+	<!--NPC faction melee mercs-->
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Brony_Mercenary_Melee"]/label</xpath>
+		<value>
+			<label>brony mercenary</label>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Brony_Mercenary_Melee"]/labelPlural</xpath>
+		<value>
+			<labelPlural>brony mercenaries</labelPlural>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Brony_Mercenary_Melee"]/apparelRequired</xpath>
+		<value>
+			<apparelRequired>
+				<li>DankPyon_Apparel_FullPlate</li>
+				<li>DankPyon_Footwear_BootsPlate</li>
+				<li>DankPyon_Handwear_GlovesPlate</li>
+				<li>PonyPlush_RainbowDash</li>
+			</apparelRequired>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Brony_Mercenary_Melee"]/apparelMoney</xpath>
+		<value>
+			<apparelMoney>1000~1600</apparelMoney>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Brony_Mercenary_Melee"]/weaponMoney</xpath>
+		<value>
+			<weaponMoney>400~700</weaponMoney>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Brony_Mercenary_Melee"]/weaponTags</xpath>
+		<value>
+			<weaponTags>
+				<li>DankPyon_Greatsword</li>
+			</weaponTags>
+		</value>
+	</Operation>
+	
+	<!--NPC faction grenadiers-->
+	
+	<!--NPC faction villagers and traders-->
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Brony_Trader" or defName="Brony_Villager"]/apparelTags</xpath>
+		<value>
+			<apparelTags>
+				<li>DankPyon_Peasant</li>
+				<li>DankPyon_PeasantHelmet</li>
+			</apparelTags>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Brony_Trader" or defName="Brony_Villager"]/apparelMoney</xpath>
+		<value>
+			<apparelMoney>200~400</apparelMoney>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Brony_Trader" or defName="Brony_Villager"]/weaponMoney</xpath>
+		<value>
+			<weaponMoney>100~250</weaponMoney>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Brony_Trader" or defName="Brony_Villager"]/apparelRequired</xpath>
+		<value>
+			<apparelRequired>
+				<li>PonyPlush_BigMacintosh</li>
+			</apparelRequired>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Brony_Trader" or defName="Brony_Villager"]/weaponTags</xpath>
+		<value>
+			<weaponTags>
+				<li>DankPyon_Bludgeon</li>
+				<li>DankPyon_Pitchfork</li>
+				<li>DankPyon_HookedBlade</li>
+				<li>DankPyon_Pickaxe</li>
+				<li>DankPyon_Hatchet</li>
+				<li>DankPyon_WoodcuttersAxe</li>
+			</weaponTags>
+		</value>
+	</Operation>
+
+</Patch>

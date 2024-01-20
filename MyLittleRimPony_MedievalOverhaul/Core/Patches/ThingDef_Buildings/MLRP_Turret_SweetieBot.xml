@@ -1,0 +1,19 @@
+<Patch>
+
+	<!--Render Sweetie Bot turrets inoperable by massively increasing the amount of power they consume.-->
+	<!--This will deter players from building them, and is less messier than trying to remove them outright.-->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="MLRP_Turret_SweetieBot"]/comps/li[@Class="CompProperties_Power"]/basePowerConsumption</xpath>
+		<value>
+			<basePowerConsumption>1000000</basePowerConsumption>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="MLRP_Turret_SweetieBot"]/description</xpath>
+		<value>
+			<description>Fires rainbow lasers that are accurate at medium to long range. Will not explode if damaged.\n\nWhile it sounds good, there is absolutely no way you'd be able to generate the huge amount of power it requires.</description>
+		</value>
+	</Operation>
+</Patch>

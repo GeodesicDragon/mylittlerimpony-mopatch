@@ -1,0 +1,16 @@
+<Patch>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="MLRP_MissPommel"]/comps</xpath>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="MLRP_MissPommel"]/researchPrerequisites</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>DankPyon_Tailoring</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	
+</Patch>

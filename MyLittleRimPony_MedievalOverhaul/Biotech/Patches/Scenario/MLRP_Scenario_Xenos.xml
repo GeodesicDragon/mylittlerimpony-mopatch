@@ -1,0 +1,17 @@
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ScenarioDef[defName="MLRP_Scenario_Xenos"]/scenario/parts/li[@Name="MLRP_BiotechScenario_Helmets"]/thingDef</xpath>
+		<value>
+			<thingDef>DankPyon_Headgear_ChainCoifClosed</thingDef>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ScenarioDef[defName="MLRP_Scenario_Xenos"]/scenario/parts/li[@Name="MLRP_BiotechScenario_Helmets"]/stuff</xpath>
+		<value>
+			<stuff>DankPyon_IronIngot</stuff>
+		</value>
+	</Operation>
+	
+</Patch>

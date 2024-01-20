@@ -1,0 +1,19 @@
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="MLRP_SSCS6K"]/comps</xpath>
+		<value>
+			<comps>
+				<li Class="CompProperties_Spawner">
+					<requiresPower>false</requiresPower>
+					<thingToSpawn>Beer</thingToSpawn>
+					<spawnCount>30</spawnCount>
+					<spawnIntervalRange><min>1800000</min><max>1800000</max></spawnIntervalRange>
+					<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+					<showMessageIfOwned>true</showMessageIfOwned>
+				</li>
+			</comps>
+		</value>
+	</Operation>
+	
+</Patch>

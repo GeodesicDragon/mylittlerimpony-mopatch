@@ -1,0 +1,61 @@
+<Defs>
+
+<RecipeDef>
+	<defName>MLRP_DB_ConvertBaseGameComponentsToMOEquivalent</defName>
+	<label>convert base game components into Medieval Overhaul components</label>
+	<description>Convert 10 base game components into 10 basic components used by Medieval Overhaul.</description>
+    <jobString>Converting materials</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <workAmount>300</workAmount>
+	<recipeUsers>
+		<li>MLRP_Daybreaker</li>
+	</recipeUsers>
+    <ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>ComponentIndustrial</li>
+				</thingDefs>
+			</filter>
+			<count>10</count>
+		</li>
+	</ingredients>
+	<products>
+		<DankPyon_ComponentBasic>10</DankPyon_ComponentBasic>
+	</products>
+</RecipeDef>
+
+<RecipeDef>
+	<defName>MLRP_DB_ConvertMOComponentsToBaseGameEquivalent</defName>
+	<label>convert Medieval Overhaul components into base game components</label>
+	<description>Convert 10 basic components into 10 base game components.</description>
+    <jobString>Converting materials</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <workAmount>300</workAmount>
+	<recipeUsers>
+		<li>MLRP_Daybreaker</li>
+	</recipeUsers>
+    <ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>DankPyon_ComponentBasic</li>
+				</thingDefs>
+			</filter>
+			<count>10</count>
+		</li>
+	</ingredients>
+	<products>
+		<ComponentIndustrial>10</ComponentIndustrial>
+	</products>
+</RecipeDef>
+
+</Defs>

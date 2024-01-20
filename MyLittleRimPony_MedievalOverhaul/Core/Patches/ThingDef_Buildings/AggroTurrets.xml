@@ -1,0 +1,39 @@
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="MLRP_Mudbriar" or defName="MLRP_QuibblePants" or defName="MLRP_ZephyrBreeze"]</xpath>
+		<value>
+			<comps>
+			  <li Class="CompProperties_Forbiddable"/>
+			  <li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>1000000</basePowerConsumption>
+			  </li>
+			  <li Class="CompProperties_Flickable"/>
+			</comps>		
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="MLRP_Mudbriar"]/description</xpath>
+		<value>
+			<description>Mudbriar's 'stick in the mud' attitude would be very useful for distracting raiders, were it not for the fact there is no possible way for you to generate the massive amount of power he needs.</description>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="MLRP_QuibblePants"]/description</xpath>
+		<value>
+			<description>Quibble's constant blabbering would be very useful for distracting raiders, were it not for the fact there is no possible way for you to generate the massive the massive amount of power he needs.</description>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="MLRP_ZephyrBreeze"]/description</xpath>
+		<value>
+			<description>Zephyr's pig-headed arrogance would be very useful for distracting raiders, were it not for the fact there is no possible way for you to generate the massive amount of power he needs.</description>
+		</value>
+	</Operation>
+
+</Patch>
+

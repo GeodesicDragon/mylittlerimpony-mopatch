@@ -1,0 +1,45 @@
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="PlushieBench"]/costList</xpath>
+		<value>
+			<costList>
+				<DankPyon_IronIngot>75</DankPyon_IronIngot>
+                <DankPyon_ComponentBasic>2</DankPyon_ComponentBasic>
+			</costList>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="PlushieBench"]/description</xpath>
+		<value>
+			<description>A workbench dedicated to the creation of pony plushies.</description>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="PlushieBench"]/comps</xpath>
+		<value>
+			<comps>
+			  <li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+				  <li>ToolCabinet</li>
+				  <li>DankPyon_ToolRack</li>
+				</linkableFacilities>
+			  </li>
+			</comps>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="PlushieBench"]/researchPrerequisites</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>DankPyon_Tailoring</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	
+</Patch>				
+				
+				

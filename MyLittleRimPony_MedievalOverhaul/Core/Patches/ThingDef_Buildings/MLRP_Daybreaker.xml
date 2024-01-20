@@ -1,0 +1,69 @@
+<Patch>
+	
+	<!--Update Daybreaker recipes to use coal instead of chemfuel.-->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[@Name="DaybreakerRecipes_HalfChemfuel"]/ingredients</xpath>
+		<value>
+			<ingredients>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>DankPyon_Coal</li>
+						</thingDefs>
+					</filter>
+					<count>5</count>
+				</li>
+			</ingredients>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[@Name="DaybreakerRecipes_RegularChemfuel"]/ingredients</xpath>
+		<value>
+			<ingredients>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>DankPyon_Coal</li>
+						</thingDefs>
+					</filter>
+					<count>10</count>
+				</li>
+			</ingredients>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[@Name="DaybreakerRecipes_DoubleChemfuel"]/ingredients</xpath>
+		<value>
+			<ingredients>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>DankPyon_Coal</li>
+						</thingDefs>
+					</filter>
+					<count>20</count>
+				</li>
+			</ingredients>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[@Name="DaybreakerRecipes_TripleChemfuel"]/ingredients</xpath>
+		<value>
+			<ingredients>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>DankPyon_Coal</li>
+						</thingDefs>
+					</filter>
+					<count>30</count>
+				</li>
+			</ingredients>
+		</value>
+	</Operation>
+	
+</Patch>
