@@ -13,7 +13,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="PlushieBench"]/description</xpath>
 		<value>
-			<description>A workbench dedicated to the creation of pony plushies.</description>
+			<description>A workbench dedicated to the creation of plushies and other pony-themed items.</description>
 		</value>
 	</Operation>
 	

@@ -11,13 +11,18 @@
 	
 	<!--NPC faction pawns have been patched, so the faction needs to be adjusted accordingly-->
 
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/FactionDef[defName="MLRP_Batpony_Faction"]/techLevel</xpath>
-		<value>
-			<techLevel>Medieval</techLevel>
-		</value>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Genes</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/FactionDef[defName="MLRP_Batpony_Faction"]/techLevel</xpath>
+			<value>
+				<techLevel>Medieval</techLevel>
+			</value>
+		</match>
 	</Operation>
 	
-	<!--Diamond dog factions are already medieval-->
+	<!--The Diamond dog faction is already medieval-->
 
 </Patch>

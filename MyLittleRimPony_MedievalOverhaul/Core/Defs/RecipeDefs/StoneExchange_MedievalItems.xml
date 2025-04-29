@@ -1,0 +1,22 @@
+<Defs>
+
+	<RecipeDef ParentName="MLRP_SE_RecipeBase">
+		<defName>MLRP_SE_DankPyon_BlocksClay</defName>
+		<label>purchase clay blocks</label>
+		<description>Use silver to purchase 100 clay blocks.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Silver</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<products>
+			<DankPyon_BlocksClay>100</DankPyon_BlocksClay>
+		</products>	
+	</RecipeDef>
+
+</Defs>

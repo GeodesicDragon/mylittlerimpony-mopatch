@@ -4,9 +4,9 @@
 	<author>GeodesicDragon</author>
 	<packageId>geodesicdragon.rimpony.medieval</packageId>
 	<url>https://discord.gg/BGKnpza</url>
-	<modVersion>1.27.3</modVersion>
+	<modVersion>1.30.18</modVersion>
 	<supportedVersions>
-		<li>1.4</li>
+		<li>1.5</li>
 	</supportedVersions>
 	<modDependencies>
 		<li>
@@ -18,17 +18,26 @@
 		<li>
 			<packageId>DankPyon.Medieval.Overhaul</packageId>
 			<displayName>Medieval Overhaul</displayName>
-			<steamWorkshopUrl>steam://url/CommunityFilePage/2553700067</steamWorkshopUrl>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/3219596926</steamWorkshopUrl>
 		</li>
 	</modDependencies>
 	<loadAfter>
 		<li>geodesicdragon.rimpony</li>
 		<li>DankPyon.Medieval.Overhaul</li>
-		<li>imranfish.xmlextensions</li>
+		<li>Ogam.Rimedieval</li>
 	</loadAfter>
 	<description><![CDATA[<b>ABOUT</b>
 	
 This mod contains a series of patches which will make My Little RimPony (MLRP) compatible with Medieval Overhaul.
+
+<b>WHAT'S NEW?</b>
+
+* Daybreaker has recipes to convert iron ingots into silver and back again.
+* Daybreaker has recipes to convert Medieval Overhaul's basic components into base RimWorld components and back again.
+* The Fabric Exchange has recipes to purchase linen, silk, daer leather, lindwurm scales, rox wool and tanning liquor.
+* You can purchase clay blocks at the Stone Exchange.
+* NPC factions - regular and batpony - will now send scholar caravans.
+* Granny Smith acts as a sunlamp that requires no power, but requires research and lots of materials to build.
 
 <b>WHAT'S BEEN CHANGED?</b>
 	
@@ -47,22 +56,21 @@ This mod contains a series of patches which will make My Little RimPony (MLRP) c
 * Quick research projects have been changed to the Medieval tech level.
 * Medium, hard and time-consuming research projects now require the advanced research bench instead of the high tech one.
 * Hard and time-consuming research projects no longer require a multi analyser.
-* Royalty DLC: Very hard research projects no longer require a multi analyser or techprints, but have been upgraded to the Spacer tech level.
-* Royalty DLC: Very time consuming research projects no longer require a multi analyser or techprints.
 * Mudbriar, Quibble Pants and Zephyr Breeze turrets now require a lot of power.
 * Factions added by MLRP have had their tech levels changed to Medieval.
 * The Stone Exchange no longer requires power.
 * The Super Speedy Cider Squeezy 6000 no longer requires power.
 * Nurse Redheart no longer requires power, but she will now spawn herbal medicine instead of industrial.
 * The Fabric Exchange no longer requires power, and is unlocked once tailoring is researched.
+* Researching how to make herbal cure kits now requires you to research alchemy first.
+* Making herbal cure kits now requires a mixture of herbs instead of just healroot.
+* Herbal cure kits can now be made at the alchemy workbench.
+* Herbal cure kits are now made in batches of five.
+* Researching Tree Hugger now requires you to research psychoid brewing by itself.
+* Researching the Statues of the Evil Sisters now requires you to research smithing instead of biofuel refining.
+* Miss Harshwhinny reduces room temperature to three degrees below freezing (was 0). This will help with ice making.
 * Vanilla Factions Expanded - Deserters: Requesting regular/critical intel now requires 50/100 herbal medicine.
-
-<b>WHAT'S NEW?</b>
-
-* Daybreaker has recipes to convert iron ingots into silver and back again.
-* Daybreaker has recipes to convert Medieval Overhaul's basic components into base RimWorld components and back again.
-* The Fabric Exchange has recipes to purchase linen, silk, daer leather, lindwurm scales, rox wool and tanning liquor.
-* NPC factions - regular and batpony - will now send scholar caravans.
+* Biotech DLC: The Renegade Alicorn scenario now starts with 100 coal instead of 250 chemfuel.
 
 <b>WHAT'S REMAINED THE SAME?</b>
 

@@ -1,18 +1,9 @@
 <Patch>
 
-	<!--Reduce tech level of basic research projects-->
-
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ResearchProjectDef[@Name="MLRP_QuickResearchBase"]/techLevel</xpath>
-		<value>
-			<techLevel>Medieval</techLevel>   
-		</value>
-	</Operation>
-	
 	<!--Replace high tech research bench with MO equivalent-->
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ResearchProjectDef[@Name="MLRP_MediumResearchBase" or @Name="MLRP_HardResearchBase" or @Name="MLRP_TimeConsumingResearchBase"]/requiredResearchBuilding</xpath>
+		<xpath>Defs/ResearchProjectDef[defName="MLRP_WeaponisedElementsResearch" or defName="MLRP_GetSkilltrainersFromNMM" or defName="MLRP_MagicMirrorResearch" or defName="MLRP_MagicMirrorExtraPowerResearch" or defName="MLRP_ArchotechResearch"]/requiredResearchBuilding</xpath>
 		<value>
 			<requiredResearchBuilding>DankPyon_AdvancedResearchBench</requiredResearchBuilding>   
 		</value>
@@ -21,7 +12,50 @@
 	<!--Remove multi analyser requirement since I can't think of anything to replace it with-->
 	
 	<Operation Class="PatchOperationRemove">
-		<xpath>Defs/ResearchProjectDef[@Name="MLRP_HardResearchBase" or @Name="MLRP_TimeConsumingResearchBase"]/requiredResearchFacilities</xpath>
+		<xpath>Defs/ResearchProjectDef[defName="MLRP_WeaponisedElementsResearch" or defName="MLRP_GetSkilltrainersFromNMM" or defName="MLRP_MagicMirrorResearch" or defName="MLRP_MagicMirrorExtraPowerResearch" or defName="MLRP_ArchotechResearch"]/requiredResearchFacilities</xpath>
+	</Operation>
+	
+	<!--Change tech prerequisites-->
+	
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName="MLRP_NightmareMoonResearch"]/prerequisites</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="MLRP_NightmareMoonResearch"]</xpath>
+				<value>
+					<prerequisites>
+						<li>Smithing</li>
+					</prerequisites>   
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ResearchProjectDef[defName="MLRP_TreeHuggerResearch"]/prerequisites</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="MLRP_TreeHuggerResearch"]</xpath>
+				<value>
+					<prerequisites>
+						<li>PsychoidBrewing</li>
+					</prerequisites>   
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ResearchProjectDef[defName="MLRP_CurePoisonJokeAddictionResearch"]</xpath>
+		<value>
+			<prerequisites>
+				<li>DankPyon_Alchemy</li>
+			</prerequisites>   
+		</value>
 	</Operation>
 
 </Patch>

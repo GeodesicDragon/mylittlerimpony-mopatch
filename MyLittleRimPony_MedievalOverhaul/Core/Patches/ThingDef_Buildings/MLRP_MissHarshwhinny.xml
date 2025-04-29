@@ -1,0 +1,28 @@
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="MLRP_MissHarshwhinny"]/comps/li[1]/heatPushMinTemperature</xpath>
+		<value>
+			<heatPushMinTemperature>-3</heatPushMinTemperature>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="MLRP_MissHarshwhinny"]/comps/li[2]/fuelConsumptionRate</xpath>
+		<value>
+			<fuelConsumptionRate>23</fuelConsumptionRate>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="MLRP_MissHarshwhinny"]/comps/li[2]/fuelFilter/thingDefs</xpath>
+		<value>
+			<li>DankPyon_Coal</li>
+			<li>DankPyon_Tar</li>
+			<li>DankPyon_RawDarkWood</li>
+			<li>DankPyon_DarkWood</li>
+			<li>DankPyon_RawWood</li>
+		</value>
+	</Operation>
+
+</Patch>

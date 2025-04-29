@@ -1,0 +1,58 @@
+<Defs>
+
+<ThingDef ParentName="MLRP_LampBase">
+    <defName>MLRP_GrannySmith</defName>
+    <label>Granny Smith</label>
+    <description>Matriarch of the Apple Family, Granny Smith has lived long enough to learn a thing or two about farming.\n\nShe performs in the same way as a sun lamp, but does not require any power.</description>
+    <thingClass>Building_SunLamp</thingClass>
+    <graphicData>
+      <texPath>Things/Building/GrannySmith</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <blockWind>false</blockWind>
+    <tickerType>Rare</tickerType>
+	<minifiedDef>MinifiedThing</minifiedDef>
+    <costList>
+      <Steel>250</Steel>
+      <DankPyon_IronIngot>125</DankPyon_IronIngot>
+      <DankPyon_ComponentBasic>10</DankPyon_ComponentBasic>
+    </costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>300</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+	  <Mass>2</Mass>
+    </statBases>
+    <size>(1,1)</size>
+    <designationCategory>MLRP_Buildings</designationCategory>
+	<uiOrder>0</uiOrder>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <overlightRadius>7.0</overlightRadius>
+        <glowRadius>14</glowRadius>
+        <glowColor>(370,370,370,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Schedule">
+        <!-- Match plant growing times -->
+        <startTime>0.25</startTime>
+        <endTime>0.8</endTime>
+        <offMessage>If the plants are restin', then so am I!</offMessage>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>3</heatPerSecond>
+      </li>
+    </comps>
+	<specialDisplayRadius>5.8</specialDisplayRadius>
+    <researchPrerequisites>
+      <li>DankPyon_AdvancedAgriculture</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+</Defs>

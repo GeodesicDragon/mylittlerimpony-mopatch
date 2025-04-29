@@ -1,0 +1,10 @@
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RecipeDef[defName="MLRP_SE_OneHundredVanillaBlocks"]/products</xpath>
+		<value>
+			<DankPyon_BlocksClay>500</DankPyon_BlocksClay>
+		</value>
+	</Operation>
+
+</Patch>

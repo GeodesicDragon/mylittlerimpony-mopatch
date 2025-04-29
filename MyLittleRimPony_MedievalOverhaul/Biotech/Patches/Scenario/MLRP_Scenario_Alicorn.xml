@@ -1,0 +1,17 @@
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ScenarioDef[defName="MLRP_Scenario_RenegadeAlicorn"]/scenario/parts/li[@Name="MLRP_RenegadeAlicornFuel"]/thingDef</xpath>
+		<value>
+			<thingDef>DankPyon_Coal</thingDef>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ScenarioDef[defName="MLRP_Scenario_RenegadeAlicorn"]/scenario/parts/li[@Name="MLRP_RenegadeAlicornFuel"]/count</xpath>
+		<value>
+			<count>500</count>
+		</value>
+	</Operation>
+
+</Patch>

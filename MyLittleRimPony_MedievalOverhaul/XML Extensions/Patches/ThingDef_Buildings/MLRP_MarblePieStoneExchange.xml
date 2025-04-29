@@ -1,7 +1,0 @@
-<Patch>
-
-	<Operation Class="PatchOperationRemove">
-		<xpath>Defs/ThingDef[defName="MLRP_MarblePieStoneExchange"]/comps</xpath>
-	</Operation>
-	
-</Patch>

@@ -1,0 +1,21 @@
+<Patch>
+
+	<!--Lock tech level of Sweetie Bot mechanoids to Industrial-->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="MLRP_SweetieBotMechResearch"]/techLevel</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="MLRP_SweetieBotMechResearch"]/techLevel</xpath>
+			<value>
+				<techLevel>Industrial</techLevel>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="MLRP_SweetieBotMechResearch"]</xpath>
+			<value>
+				<techLevel>Industrial</techLevel>
+			</value>
+		</nomatch>
+	</Operation>
+	
+</Patch>

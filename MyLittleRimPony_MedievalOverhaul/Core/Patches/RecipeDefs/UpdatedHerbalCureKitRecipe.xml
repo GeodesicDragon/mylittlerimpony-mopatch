@@ -1,0 +1,81 @@
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="MLRP_MakeHerbalCureKit"]/label</xpath>
+		<value>
+			<label>make herbal cure kit x 5</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="MLRP_MakeHerbalCureKit"]/description</xpath>
+		<value>
+			<description>Prepare a remedy for many an affliction using various herbs.</description>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RecipeDef[defName="MLRP_MakeHerbalCureKit"]/recipeUsers</xpath>
+		<value>
+			<li>DankPyon_AlchemyBench</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="MLRP_MakeHerbalCureKit"]/ingredients</xpath>
+		<value>
+			<ingredients>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>DankPyon_Fleawort</li>
+						</thingDefs>
+					</filter>
+					<count>5</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>DankPyon_FlyAgaric</li>
+						</thingDefs>
+					</filter>
+					<count>5</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>MedicineHerbal</li>
+						</thingDefs>
+					</filter>
+					<count>5</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>DankPyon_Mindwort</li>
+						</thingDefs>
+					</filter>
+					<count>5</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>DankPyon_Poppy</li>
+						</thingDefs>
+					</filter>
+					<count>5</count>
+				</li>
+			</ingredients>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="MLRP_MakeHerbalCureKit"]/products</xpath>
+		<value>
+			<products>
+				<MLRP_PoisonJokeAddictionCureKit>5</MLRP_PoisonJokeAddictionCureKit>
+			</products>	
+		</value>
+	</Operation>
+
+</Patch>

@@ -1,3 +1,28 @@
+Version 1.30.18 (April 29th 2025)
+
+* Core: Added a new recipe to the Stone Exchange which allows you to purchase clay blocks.
+* Core: Added Granny Smith.
+	* Acts as a sunlamp.
+	* Does not require any power.
+	* Can be researched after unlocking advanced agriculture.
+	* Requires 250 steel, 125 iron and 10 basic components to build.
+* Vanilla Achievements Expanded: Added an achievement to build Granny Smith.
+* Core: Removed support for version 1.4 of RimWorld.
+* Core: Removed all XML Extensions patches.
+* Core: The recipe for herbal cure kits has been changed to 5 fleawort, 5 fly agaric, 5 herbal meds, 5 mindwort and 5 poppies (was 25 herbal meds).
+* Core: Herbal cure kits can now be made at the alchemy workbench.
+* Core: Herbal cure kits are now made in batches of 5.
+* Core: Researching how to make herbal cure kits now requires you to research alchemy first.
+* Core: Researching the Statues of the Evil Sisters now requires you to research smithing instead of biofuel refining.
+* Core: Miss Harshwhinny now reduces temperature to a maximum of negative three degrees, but at the cost of using 25% more fuel.
+* Core: Miss Harshwhinny can now be refuelled with coal, tar, raw dark wood, dark wood planks, and Medieval Overhaul's wooden logs.
+* Core: Coal costs at the Daybreaker statue have been doubled.
+* Core: Purchasing 500 of each block at the stone exchange now gives you clay blocks.
+* Ideology: Fixed 'Verse.PatchOperationConditional(xpath=Defs/FactionDef[defName="MLRP_Batpony_Faction"]/disallowedMemes' error seen if Alpha Genes wasn't enabled.
+* Biotech: Fixed 'Verse.PatchOperationReplace(xpath="Defs/FactionDef[defName="MLRP_Batpony_Faction"]/techLevel"): Failed to find a node with the given xpath' error seen if Alpha Genes wasn't enabled.
+* Biotech: Fixed 'Verse.PatchOperationAdd(xpath="Defs/FactionDef[defName="MLRP_Batpony_Faction"]/caravanTraderKinds"): Failed to find a node with the given xpath' error seen if Alpha Genes wasn't enabled.
+* Biotech: The Renegade Alicorn scenario now starts with 500 coal instead of 250 chemfuel.
+
 Version 1.27.3 (January 20th 2024)
 
 * If you have XML Extensions enabled, you can now decide whether or not the following changes are applied.

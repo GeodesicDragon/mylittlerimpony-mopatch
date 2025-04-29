@@ -1,0 +1,18 @@
+<Defs>
+	
+	<AchievementsExpanded.AchievementDef>
+		<defName>MLRP_Achievement_GrannySmith</defName>
+		<label>Move Your Caboose!</label>
+		<description>Build a Granny Smith sunlamp</description>
+		<tab>MLRP_BuildingAchievementTab</tab>
+		
+		<tracker Class="AchievementsExpanded.BuildingTracker">
+			<def>MLRP_GrannySmith</def>
+			<count>1</count>
+		</tracker>
+		
+		<texPath>Achievements/MoveYourCaboose</texPath>
+		<points>10</points>
+	</AchievementsExpanded.AchievementDef>
+
+</Defs>
