@@ -1,0 +1,46 @@
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ScenarioDef[defName="MLRP_Scenario"]/scenario/parts</xpath>
+		<value>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Projectile_DankPyonCrossbowBolt_Iron</thingDef>
+				<count>100</count>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ScenarioDef[defName="MLRP_Scenario_Xenos"]/scenario/parts</xpath>
+			<value>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Projectile_DankPyonCrossbowBolt_Iron</thingDef>
+					<count>150</count>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ScenarioDef[defName="MLRP_Scenario_RenegadeAlicorn"]/scenario/parts</xpath>
+			<value>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Bullet_Handgonne_Ball</thingDef>
+					<count>50</count>
+				</li>
+			</value>
+		</match>
+	</Operation>
+
+</Patch>

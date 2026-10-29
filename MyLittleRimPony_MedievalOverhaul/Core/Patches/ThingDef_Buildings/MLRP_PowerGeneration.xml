@@ -1,0 +1,63 @@
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="MLRP_ScrewballGenerator"]/comps</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="MLRP_MagicMirrorGenerator"]/comps</xpath>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="MLRP_ScrewballGenerator"]/description</xpath>
+				<value>
+					<description>Remants of a strange power linger on this pony; some believed she was cursed by Discord - something he always vehemently denied - but whatever it was faded long ago.</description>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="MLRP_MagicMirrorGenerator"]/description</xpath>
+				<value>
+					<description>You're not sure what this building once did, but you can't deny that it looks really nice now that you've finished putting all of those resources into its construction.</description>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="MLRP_MagicMirrorGenerator"]/costList</xpath>
+				<value>
+					<costList>
+						<Steel>500</Steel>
+						<DankPyon_IronIngot>500</DankPyon_IronIngot>
+						<DankPyon_Emerald>100</DankPyon_Emerald>
+						<DankPyon_Sapphire>100</DankPyon_Sapphire>
+						<DankPyon_Ruby>100</DankPyon_Ruby>
+						<PonyPlush_SunsetShimmer>1</PonyPlush_SunsetShimmer>
+					</costList>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="MLRP_MagicMirrorGenerator"]/statBases/Beauty</xpath>
+				<value>
+					<Beauty>750</Beauty>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="MLRP_ScrewballResearch"]/baseCost</xpath>
+				<value>
+					<baseCost>1</baseCost>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="MLRP_MagicMirrorResearch"]/baseCost</xpath>
+				<value>
+					<baseCost>750</baseCost>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="MLRP_MagicMirrorResearch"]/techLevel</xpath>
+				<value>
+					<techLevel>Medieval</techLevel>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>

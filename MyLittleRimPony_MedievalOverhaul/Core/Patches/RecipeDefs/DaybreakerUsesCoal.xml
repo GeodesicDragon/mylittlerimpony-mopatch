@@ -1,0 +1,66 @@
+<Patch>
+
+	<!--25 CHEMFUEL RECIPES-->
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="MLRP_DB_MakeFlake" or defName="MLRP_DB_MakeGoJuice" or defName="MLRP_DB_MakePenoxycyline" or defName="MLRP_DB_MakePoisonJokeJoint" or defName="MLRP_DB_MakePsychiteTea" or defName="MLRP_DB_MakeSmokeleafJoints" or defName="MLRP_DB_MakeWakeUp" or defName="MLRP_DB_MakeYayo" or defName="MLRP_DB_CreateTwoHundredFiftyBeer"]/ingredients/li[1]</xpath>
+		<value>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Coal</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</value>
+	</Operation>
+	
+	<!--50 CHEMFUEL RECIPES-->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="MLRP_DB_ConvertSilverIntoJade" or defName="MLRP_DB_ConvertSilverIntoSteel" or defName="MLRP_DB_ConvertSilverIntoPlasteel" or defName="MLRP_DB_ConvertSilverIntoUranium" or defName="MLRP_DB_ConvertSilverIntoGold" or defName="MLRP_DB_ConvertJadeIntoSilver" or defName="MLRP_DB_ConvertSteelIntoSilver" or defName="MLRP_DB_ConvertPlasteelIntoSilver" or defName="MLRP_DB_ConvertUraniumIntoSilver" or defName="MLRP_DB_ConvertGoldIntoSilver" or defName="MLRP_DB_ConvertGoldIntoJade" or defName="MLRP_DB_ConvertGoldIntoSteel" or defName="MLRP_DB_ConvertGoldIntoPlasteel" or defName="MLRP_DB_ConvertGoldIntoUranium" or defName="MLRP_DB_CreateComponentIndustrial" or defName="MLRP_DB_CreateComponentSpacer"]/ingredients/li[1]</xpath>
+		<value>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Coal</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</value>
+	</Operation>
+	
+	<!--100 CHEMFUEL RECIPES-->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="MLRP_DB_CreateComponentIndustrialTen" or defName="MLRP_DB_CreateComponentSpacerTen"]/ingredients/li[1]</xpath>
+		<value>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Coal</li>
+					</thingDefs>
+				</filter>
+				<count>40</count>
+			</li>
+		</value>
+	</Operation>
+	
+	<!--250 CHEMFUEL RECIPES-->
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="MLRP_DB_ConvertTenThousandSilverIntoGold" or defName="MLRP_DB_ConvertOneThousandGoldIntoSilver"]/ingredients/li[1]</xpath>
+		<value>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Coal</li>
+					</thingDefs>
+				</filter>
+				<count>100</count>
+			</li>
+		</value>
+	</Operation>
+</Patch>

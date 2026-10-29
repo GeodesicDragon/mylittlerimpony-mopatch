@@ -1,38 +1,59 @@
 <Patch>
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="MLRP_Mudbriar" or defName="MLRP_QuibblePants" or defName="MLRP_ZephyrBreeze"]</xpath>
-		<value>
-			<comps>
-			  <li Class="CompProperties_Forbiddable"/>
-			  <li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
-				<basePowerConsumption>1000000</basePowerConsumption>
-			  </li>
-			  <li Class="CompProperties_Flickable"/>
-			</comps>		
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="MLRP_Mudbriar"]/description</xpath>
-		<value>
-			<description>Mudbriar's 'stick in the mud' attitude would be very useful for distracting raiders, were it not for the fact there is no possible way for you to generate the massive amount of power he needs.</description>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="MLRP_QuibblePants"]/description</xpath>
-		<value>
-			<description>Quibble's constant blabbering would be very useful for distracting raiders, were it not for the fact there is no possible way for you to generate the massive the massive amount of power he needs.</description>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="MLRP_ZephyrBreeze"]/description</xpath>
-		<value>
-			<description>Zephyr's pig-headed arrogance would be very useful for distracting raiders, were it not for the fact there is no possible way for you to generate the massive amount of power he needs.</description>
-		</value>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="MLRP_Mudbriar"]/description</xpath>
+				<value>
+					<description>This guy seems like he's a lot of fun at parties, but at least he makes the room a bit more bearable to be in.</description>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="MLRP_QuibblePants"]/description</xpath>
+				<value>
+					<description>This guy seems like the kind who never stops talking, but at least he makes the room a bit more bearable to be in.</description>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="MLRP_ZephyrBreeze"]/description</xpath>
+				<value>
+					<description>This guy seems like he oozes arrogance, but at least he makes the room a bit more bearable to be in.</description>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="MLRP_Mudbriar" or defName="MLRP_QuibblePants" or defName="MLRP_ZephyrBreeze"]/statBases</xpath>
+				<value>
+					<Beauty>5</Beauty>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="MLRP_Mudbriar" or defName="MLRP_QuibblePants" or defName="MLRP_ZephyrBreeze"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>300</costStuffCount>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="MLRP_Mudbriar" or defName="MLRP_QuibblePants" or defName="MLRP_ZephyrBreeze"]/stuffCategories</xpath>
+				<value>
+					<li>Stony</li>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="MLRP_Mudbriar" or defName="MLRP_QuibblePants" or defName="MLRP_ZephyrBreeze"]/costList</xpath>
+			</li>
+		
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="MLRP_Mudbriar" or defName="MLRP_QuibblePants" or defName="MLRP_ZephyrBreeze"]/building</xpath>
+			</li>
+		
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="MLRP_Mudbriar" or defName="MLRP_QuibblePants" or defName="MLRP_ZephyrBreeze"]/researchPrerequisites</xpath>
+			</li>
+		</operations>
 	</Operation>
 
 </Patch>

@@ -1,10 +1,87 @@
+Version 2.0.18 (October 29th 2026)
+
+* Mod is now compatible with the RimWorld 1.7 update.
+* Core: Fixed missing instructions in LoadFolders.xml file.
+* Core: Sweetie Bot turrets have been converted into art pieces in the same way as Screwball and the magic mirror.
+	* Updated description.
+	* Added base beauty of 10.
+	* Removed accuracy stats.
+	* Removed power consumption.
+	* Changed stuff count to 300.
+	* Can now be built using stone.
+	* No other materials are required.
+	* Available to build from the start of a new colony.
+* Core: Aggro turrets have been converted into art pieces in the same way as Screwball and the magic mirror.
+	* Updated descriptions.
+	* Added base beauty of 5.
+	* Changed stuff count to 300.
+	* Can now be built using stone.
+	* No other materials are required.
+	* Available to build from the start of a new colony.
+* Biotech: Fixed 'List item found with name thingDef that is not <li>, and which does not have a custom XML loader method' error.
+* Biotech: Replaced the Brony Xenotypes scenario starting pistols with crossbows. (Ammo will be added if CE is enabled.)
+* Biotech: Replaced the Brony Xenotypes scenario starting plasteel knives with iron ones.
+* Biotech: Replaced the Brony Xenotypes scenario starting packaged survival meals with packaged rations.
+* Biotech: Replaced the Brony Xenotypes scenario starting industrial medicine with herbal extracts.
+* Biotech: Replaced the Brony Xenotypes scenario starting industrial components with the ones added by Medieval Overhaul.
+* Biotech: Removed the three starting turrets from the Brony Xenotypes scenario.
+* Biotech: Removed the three starting Screwballs from the Brony Xenotypes scenario.
+* Biotech: Replaced the Renegade Alicorn scenario starting rainbow laser with a handgonne. (Ammo will be added if CE is enabled.)
+* Combat Extended/Core: Fixed patching error related to the headgear given at the start of the Brony Community scenario.
+* Combat Extended/Core: Replaced Brony Community scenario ammo with CE variant.
+* Combat Extended/Biotech: Fixed patching error related to the headgear given at the start of the Brony Xenotypes scenario.
+* Combat Extended/Biotech: Replaced Brony Xenotypes scenario ammo with CE variant.
+* Combat Extended/Biotech: Fixed patching error related to the headgear given at the start of the Renegade Alicorn scenario.
+
+Version 2.0.0 (September 7th 2026)
+
+* Mod is now compatible with the RimWorld 1.6 patch. (1)
+* Core: Added a new recipe to the Stone Exchange which allows you to sell excess clay blocks.
+* Core: Fixed 'Could not find parent node named "DaybreakerRecipes_RegularChemfuel" for node "RecipeDef"' error.
+* Core: Fixed patch error related to the Evil Sisters.
+* Core: Fixed patch error related to Tree Hugger.
+* Core: Fixed patch error related to the Stone Exchange.
+* Core: Fixed three patch errors related to the Fabric Exchange.
+* Core: Researching the Fabric Exchange no longer requires you to research Tailoring first.
+* Core: Building the pony workbench no longer requires you to research Tailoring first.
+* Core: Replaced the Brony Community scenario starting pistols with crossbows. (Ammo will be added if CE is enabled.)
+* Core: Replaced the Brony Community scenario starting plasteel knife with an iron one.
+* Core: Replaced the Brony Community scenario starting packaged survival meals with packaged rations.
+* Core: Replaced the Brony Community scenario starting industrial medicine with herbal extracts.
+* Core: Replaced the Brony Community scenario starting industrial components with the ones added by Medieval Overhaul.
+* Core: Removed the three starting turrets from the Brony Community scenario.
+* Core: Removed the two starting Screwballs from the Brony Community scenario.
+* Core: Changed tech level of skilltrainer research to Medieval (was Industrial).
+* Core: Increased research cost of skilltrainer research to 6000 (was 4500).
+* Core: Screwballs no longer generate electricity. (2)
+* Core: Reduced the cost of researching Screwball to 1 (was 500). (2)
+* Core: Magic mirrors no longer generate electricity. (2)
+* Core: Reduced the cost of researching the magic mirror to 750 (was 30000).
+* Core: Reduced the tech level of the magic mirror research to Medieval (was Ultra).
+* Core: Building the magic mirror now requires 500 steel, 500 iron, 100 emeralds, 100 sapphires, 100 rubies, and a single Sunset Shimmer plushie that you can acquire - as per usual - from quests or Nightmare Moon.
+* Core: Increased the beauty of the magic mirror to 750 (was 3). (3)
+* Core: Building Limestone Pie now requires 4 of Medieval Overhauls components instead of 4 of RimWorld's.
+* Core: Building Limestone Pie now requires you to research Mining in the Medieval tab (was deep drilling).
+* Biotech: The recipe to dispose of toxic waste at Daybreaker now uses coal.
+* Biotech: Replaced the Renegade Alicorn scenario starting packaged survival meals with packaged rations.
+* Biotech: Replaced the Renegade Alicorn scenario starting industrial components with the ones added by Medieval Overhaul.
+* Biotech: Replaced the Renegade Alicorn scenario starting plasteel gladii with iron ones.
+* Biotech: Replaced the Renegade Alicorn scenario starting plasteel flak helmets with iron chain closed coifs.
+* Anomaly: Thingpone no longer requires power.
+* Anomaly: Building Thingpone now requires 300 steel, 150 iron ingots and 10 basic components (was 250 stuff).
+* World Tech Level: The Brony Community faction is no longer considered to be too advanced if setting the world max tech level to below Industrial while creating a new colony.
+
+1. About damn time, am I right?
+2. Doing this is much better than trying to remove the building completely, as doing so caused a lot of red errors. You can still build Screwballs, but they're only good for being small art pieces now.
+3. It's still less beautiful than a Three Villains Statue made of gold, but at least it's more beautiful than it was before.
+
 Version 1.30.18 (April 29th 2025)
 
 * Core: Added a new recipe to the Stone Exchange which allows you to purchase clay blocks.
 * Core: Added Granny Smith.
 	* Acts as a sunlamp.
 	* Does not require any power.
-	* Can be researched after unlocking advanced agriculture.
+	* Can be built after unlocking advanced agriculture.
 	* Requires 250 steel, 125 iron and 10 basic components to build.
 * Vanilla Achievements Expanded: Added an achievement to build Granny Smith.
 * Core: Removed support for version 1.4 of RimWorld.

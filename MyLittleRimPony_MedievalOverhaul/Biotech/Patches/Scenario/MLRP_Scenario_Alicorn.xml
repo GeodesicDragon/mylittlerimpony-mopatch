@@ -1,17 +1,86 @@
 <Patch>
 
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ScenarioDef[defName="MLRP_Scenario_RenegadeAlicorn"]/scenario/parts/li[@Name="MLRP_RenegadeAlicornFuel"]/thingDef</xpath>
-		<value>
-			<thingDef>DankPyon_Coal</thingDef>
-		</value>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ScenarioDef[defName="MLRP_Scenario_RenegadeAlicorn"]/scenario/parts/li[@Name="MLRP_RenegadeAlicornFuel"]</xpath>
+				<value>
+					<li Class="ScenPart_StartingThing_Defined" Name="MLRP_RenegadeAlicornFuel">
+						<def>StartingThing_Defined</def>
+						<thingDef>DankPyon_Coal</thingDef>
+						<count>500</count>
+					</li>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ScenarioDef[defName="MLRP_Scenario_RenegadeAlicorn"]/scenario/parts/li[@Name="MLRP_RenegadeAlicornFood"]</xpath>
+				<value>
+					<li Class="ScenPart_StartingThing_Defined" Name="MLRP_RenegadeAlicornFood">
+						<def>StartingThing_Defined</def>
+						<thingDef>DankPyon_MealRations</thingDef>
+						<count>40</count>
+					</li>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ScenarioDef[defName="MLRP_Scenario_RenegadeAlicorn"]/scenario/parts/li[@Name="MLRP_RenegadeAlicornComponents"]</xpath>
+				<value>
+					<li Class="ScenPart_StartingThing_Defined" Name="MLRP_RenegadeAlicornComponents">
+						<def>StartingThing_Defined</def>
+						<thingDef>DankPyon_ComponentBasic</thingDef>
+						<count>10</count>
+					</li>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ScenarioDef[defName="MLRP_Scenario_RenegadeAlicorn"]/scenario/parts/li[@Name="MLRP_RenegadeAlicornRanged"]</xpath>
+				<value>
+					<li Class="ScenPart_StartingThing_Defined" Name="MLRP_RenegadeAlicornRanged">
+						<def>StartingThing_Defined</def>
+						<thingDef>DankPyon_Handgonne</thingDef>
+						<count>1</count>
+					</li>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ScenarioDef[defName="MLRP_Scenario_RenegadeAlicorn"]/scenario/parts/li[@Name="MLRP_RenegadeAlicornMelee"]</xpath>
+				<value>
+					<li Class="ScenPart_StartingThing_Defined" Name="MLRP_RenegadeAlicornMelee">
+						<def>StartingThing_Defined</def>
+						<thingDef>MeleeWeapon_Gladius</thingDef>
+						<count>3</count>
+						<stuff>DankPyon_IronIngot</stuff>
+					</li>
+				</value>
+			</li>
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Combat Extended</li>
+				</mods>
+				<match Class="PatchOperationReplace">
+					<xpath>Defs/ScenarioDef[defName="MLRP_Scenario_RenegadeAlicorn"]/scenario/parts/li[@Name="MLRP_RAScenario_Helmets"]</xpath>
+					<value>
+						<li Class="ScenPart_StartingThing_Defined" Name="MLRP_RAScenario_Helmets">
+							<def>StartingThing_Defined</def>
+							<thingDef>CE_Apparel_PlateHelmet</thingDef>
+							<count>4</count>
+							<stuff>DankPyon_IronIngot</stuff>
+						</li>
+					</value>
+				</match>
+				<nomatch Class="PatchOperationReplace">
+					<xpath>Defs/ScenarioDef[defName="MLRP_Scenario_RenegadeAlicorn"]/scenario/parts/li[@Name="MLRP_RAScenario_Helmets"]</xpath>
+					<value>
+						<li Class="ScenPart_StartingThing_Defined" Name="MLRP_RAScenario_Helmets" >
+							<def>StartingThing_Defined</def>
+							<thingDef>DankPyon_Headgear_ChainCoifClosed</thingDef>
+							<count>4</count>
+							<stuff>DankPyon_IronIngot</stuff>
+						</li>
+					</value>
+				</nomatch>
+			</li>
+		</operations>
 	</Operation>
 	
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ScenarioDef[defName="MLRP_Scenario_RenegadeAlicorn"]/scenario/parts/li[@Name="MLRP_RenegadeAlicornFuel"]/count</xpath>
-		<value>
-			<count>500</count>
-		</value>
-	</Operation>
-
 </Patch>

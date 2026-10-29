@@ -17,36 +17,13 @@
 	
 	<!--Change tech prerequisites-->
 	
-	<Operation Class="PatchOperationSequence">
-		<operations>
-			<li Class="PatchOperationRemove">
-				<xpath>Defs/ResearchProjectDef[defName="MLRP_NightmareMoonResearch"]/prerequisites</xpath>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ResearchProjectDef[defName="MLRP_NightmareMoonResearch"]</xpath>
-				<value>
-					<prerequisites>
-						<li>Smithing</li>
-					</prerequisites>   
-				</value>
-			</li>
-		</operations>
-	</Operation>
-	
-	<Operation Class="PatchOperationSequence">
-		<operations>
-			<li Class="PatchOperationRemove">
-				<xpath>Defs/ResearchProjectDef[defName="MLRP_TreeHuggerResearch"]/prerequisites</xpath>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ResearchProjectDef[defName="MLRP_TreeHuggerResearch"]</xpath>
-				<value>
-					<prerequisites>
-						<li>PsychoidBrewing</li>
-					</prerequisites>   
-				</value>
-			</li>
-		</operations>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ResearchProjectDef[defName="MLRP_NightmareMoonResearch"]</xpath>
+		<value>
+			<prerequisites>
+				<li>Smithing</li>
+			</prerequisites>   
+		</value>
 	</Operation>
 	
 	<Operation Class="PatchOperationAdd">
@@ -55,6 +32,20 @@
 			<prerequisites>
 				<li>DankPyon_Alchemy</li>
 			</prerequisites>   
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="MLRP_GetSkilltrainersFromNMM"]/techLevel</xpath>
+		<value>
+			<techLevel>Medieval</techLevel>   
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="MLRP_GetSkilltrainersFromNMM"]/baseCost</xpath>
+		<value>
+			<baseCost>6000</baseCost>   
 		</value>
 	</Operation>
 

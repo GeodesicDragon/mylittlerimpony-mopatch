@@ -1,0 +1,17 @@
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="MLRP_DB_ConvertSilverIntoObsidian" or defName="MLRP_DB_ConvertObsidianIntoSilver"]/ingredients/li[1]</xpath>
+		<value>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Coal</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</value>
+	</Operation>
+	
+</Patch>

@@ -9,6 +9,33 @@
 		</value>
 	</Operation>
 	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>World Tech Level</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/FactionDef[defName="MLRP_RenegadeAlicornFaction"]/startingResearchTags</xpath>
+					<value>
+						<startingResearchTags>
+							<li>TribalStart</li>
+						</startingResearchTags>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/FactionDef[defName="MLRP_RenegadeAlicornFaction"]/startingTechprintsResearchTags</xpath>
+					<value>
+						<startingTechprintsResearchTags>
+							<li>TribalStart</li>
+							<li>TribalStartTechprints</li>
+						</startingTechprintsResearchTags>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
 	<!--NPC faction pawns have been patched, so the faction needs to be adjusted accordingly-->
 
 	<Operation Class="PatchOperationFindMod">

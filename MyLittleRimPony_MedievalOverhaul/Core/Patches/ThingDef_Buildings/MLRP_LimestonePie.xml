@@ -1,0 +1,25 @@
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="MLRP_LimestonePie"]/costList</xpath>
+				<value>
+					<costList>
+						<Steel>200</Steel>
+						<DankPyon_ComponentBasic>4</DankPyon_ComponentBasic>
+					</costList>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="MLRP_LimestonePie"]/researchPrerequisites</xpath>
+				<value>
+					<researchPrerequisites>
+						<li>DankPyon_Mining</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>

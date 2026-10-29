@@ -1,0 +1,31 @@
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="MLRP_VFE_Deserters_GetRegularIntel"]/ingredients/li[2]</xpath>
+		<value>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineHerbal</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="MLRP_VFE_Deserters_GetCriticalIntel"]/ingredients/li[2]</xpath>
+		<value>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineHerbal</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+		</value>
+	</Operation>
+
+</Patch>

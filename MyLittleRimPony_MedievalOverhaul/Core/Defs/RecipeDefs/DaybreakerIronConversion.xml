@@ -2,7 +2,7 @@
 
 <!--CONVERT IRON INGOTS TO SILVER-->
 
-<RecipeDef ParentName="DaybreakerRecipes_RegularChemfuel">
+<RecipeDef>
 	<defName>MLRP_DB_ConvertMOIronIngotsIntoSilver</defName>
 	<label>convert iron ingots to silver</label>
 	<description>Convert 667 iron ingots into 1000 silver.</description>
@@ -25,6 +25,14 @@
 			</filter>
 			<count>667</count>
 		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>DankPyon_Coal</li>
+				</thingDefs>
+			</filter>
+			<count>20</count>
+		</li>
 	</ingredients>
 	<products>
 		<Silver>1000</Silver>
@@ -33,7 +41,7 @@
 
 <!--CONVERT SILVER TO IRON INGOTS-->
 
-<RecipeDef ParentName="DaybreakerRecipes_RegularChemfuel">
+<RecipeDef>
 	<defName>MLRP_DB_ConvertSilverIntoMOIronIngots</defName>
 	<label>convert silver to iron ingots</label>
 	<description>Convert 1000 silver into 667 iron ingots.</description>
@@ -55,6 +63,14 @@
 				</thingDefs>
 			</filter>
 			<count>100</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>DankPyon_Coal</li>
+				</thingDefs>
+			</filter>
+			<count>20</count>
 		</li>
 	</ingredients>
 	<products>

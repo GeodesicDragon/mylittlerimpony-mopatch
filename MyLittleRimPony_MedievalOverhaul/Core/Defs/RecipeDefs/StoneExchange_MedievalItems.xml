@@ -18,5 +18,24 @@
 			<DankPyon_BlocksClay>100</DankPyon_BlocksClay>
 		</products>	
 	</RecipeDef>
+	
+	<RecipeDef ParentName="MLRP_SE_RecipeBase">
+		<defName>MLRP_SE_SellDankPyon_BlocksClay</defName>
+		<label>sell clay blocks</label>
+		<description>Sell 100 clay blocks in exchange for silver.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_BlocksClay</li>
+					</thingDefs>
+				</filter>
+				<count>100</count>
+			</li>
+		</ingredients>
+		<products>
+			<Silver>100</Silver>
+		</products>	
+	</RecipeDef>
 
 </Defs>

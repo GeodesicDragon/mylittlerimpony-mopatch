@@ -1,19 +1,84 @@
 <Patch>
 
-	<!--Render Sweetie Bot turrets inoperable by massively increasing the amount of power they consume.-->
-	<!--This will deter players from building them, and is less messier than trying to remove them outright.-->
+	<!--Turn Sweetie Bot turrets into glorified art pieces.-->
+	<!--This will deter players from building them, and is easier than trying to remove them outright.-->
 
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="MLRP_Turret_SweetieBot"]/comps/li[@Class="CompProperties_Power"]/basePowerConsumption</xpath>
-		<value>
-			<basePowerConsumption>1000000</basePowerConsumption>
-		</value>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="MLRP_Turret_SweetieBot"]/label</xpath>
+				<value>
+					<label>Sweetie Bot</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="MLRP_Turret_SweetieBot"]/description</xpath>
+				<value>
+					<description>It isn't quite clear what this device is meant to be, but at least it looks nice.</description>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="MLRP_Turret_SweetieBot"]/statBases</xpath>
+				<value>
+					<Beauty>10</Beauty>
+				</value>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="MLRP_Turret_SweetieBot"]/statBases/ShootingAccuracyTurret</xpath>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="MLRP_Turret_SweetieBot"]/statBases/AccuracyTouch</xpath>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="MLRP_Turret_SweetieBot"]/statBases/AccuracyShort</xpath>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="MLRP_Turret_SweetieBot"]/statBases/AccuracyMedium</xpath>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="MLRP_Turret_SweetieBot"]/statBases/AccuracyLong</xpath>
+			</li>
+		
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="MLRP_Turret_SweetieBot"]/comps</xpath>
+			</li>
+		
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="MLRP_Turret_SweetieBot"]/costStuffCount</xpath>
+				<value>
+					<costStuffCount>300</costStuffCount>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="MLRP_Turret_SweetieBot"]/stuffCategories</xpath>
+				<value>
+					<li>Stony</li>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="MLRP_Turret_SweetieBot"]/costList</xpath>
+			</li>
+		
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="MLRP_Turret_SweetieBot"]/building</xpath>
+			</li>
+		
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="MLRP_Turret_SweetieBot"]/placeWorkers</xpath>
+			</li>
+		
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="MLRP_Turret_SweetieBot"]/researchPrerequisites</xpath>
+			</li>
+		</operations>
 	</Operation>
 	
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="MLRP_Turret_SweetieBot"]/description</xpath>
-		<value>
-			<description>Fires rainbow lasers that are accurate at medium to long range. Will not explode if damaged.\n\nWhile it sounds good, there is absolutely no way you'd be able to generate the huge amount of power it requires.</description>
-		</value>
-	</Operation>
 </Patch>

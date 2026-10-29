@@ -1,0 +1,27 @@
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="MLRP_Thingpone"]/comps</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="MLRP_Thingpone"]/costStuffCount</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="MLRP_Thingpone"]/stuffCategories</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="MLRP_Thingpone"]</xpath>
+				<value>
+					<costList>
+						<Steel>300</Steel>
+						<DankPyon_IronIngot>150</DankPyon_IronIngot>
+						<DankPyon_ComponentBasic>10</DankPyon_ComponentBasic>
+					</costList>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+</Patch>

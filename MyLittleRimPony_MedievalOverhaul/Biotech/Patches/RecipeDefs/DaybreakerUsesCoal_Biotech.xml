@@ -1,0 +1,17 @@
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="MLRP_DB_ToxicWasteRemoval"]/ingredients/li[1]</xpath>
+		<value>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_Coal</li>
+					</thingDefs>
+				</filter>
+				<count>100</count>
+			</li>
+		</value>
+	</Operation>
+	
+</Patch>

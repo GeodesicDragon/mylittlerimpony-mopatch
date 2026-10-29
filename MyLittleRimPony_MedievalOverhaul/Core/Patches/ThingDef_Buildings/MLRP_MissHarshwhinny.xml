@@ -1,6 +1,6 @@
 <Patch>
 
-	<Operation Class="PatchOperationReplace">
+	<!--<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="MLRP_MissHarshwhinny"]/comps/li[1]/heatPushMinTemperature</xpath>
 		<value>
 			<heatPushMinTemperature>-3</heatPushMinTemperature>
@@ -23,6 +23,6 @@
 			<li>DankPyon_DarkWood</li>
 			<li>DankPyon_RawWood</li>
 		</value>
-	</Operation>
+	</Operation>-->
 
 </Patch>

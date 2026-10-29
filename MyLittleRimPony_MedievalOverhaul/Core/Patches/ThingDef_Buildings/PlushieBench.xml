@@ -11,13 +11,6 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="PlushieBench"]/description</xpath>
-		<value>
-			<description>A workbench dedicated to the creation of plushies and other pony-themed items.</description>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="PlushieBench"]/comps</xpath>
 		<value>
 			<comps>
@@ -28,15 +21,6 @@
 				</linkableFacilities>
 			  </li>
 			</comps>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="PlushieBench"]/researchPrerequisites</xpath>
-		<value>
-			<researchPrerequisites>
-				<li>DankPyon_Tailoring</li>
-			</researchPrerequisites>
 		</value>
 	</Operation>
 	
